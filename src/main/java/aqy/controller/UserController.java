@@ -13,6 +13,7 @@ public class UserController {
         System.out.println("进入Controller层方法");
         String cardno = request.getParameter("cardno");
         String password =request.getParameter("password");
+        System.out.println(password);
         AccountService accountService=new AccountService();
         try {
             Account account=accountService.login(cardno,password);

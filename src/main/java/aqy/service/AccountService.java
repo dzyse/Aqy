@@ -11,13 +11,14 @@ public class AccountService {
     public Account login(String id,String password)throws Exception{
         Account list=userDAO.getuser(id);
         System.out.println(list);
+        System.out.println(list.getPassword());
         if(list==null){
-            System.out.println("账号不存在");
+
             throw new Exception("账号不存在");
 
         }else {
             if (!list.getPassword().equals(password)){
-                System.out.println("密码错误");
+
                 throw new Exception("密码错误");
             }
         }
