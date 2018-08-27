@@ -4,9 +4,9 @@ import java.sql.*;
 
 public class JdbcUtil {
    public static String driver="com.mysql.jdbc.Driver";
-   public static String url="jdbc:mysql://localhost:3306/aiqiyi";
+   public static String url="jdbc:mysql://localhost:3306/aqy";
    public static String username="root";
-   public static String password="12345";
+   public static String password="13866950037";
    static {
        try {
            Class.forName(driver);
