@@ -6,6 +6,17 @@
         <element id="directory" name="classes">
           <element id="module-output" name="Aqy" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: cn.danielw:spring-jdbc-template:0.2.1" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.3.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.6.RELEASE" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.3.6.RELEASE" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.7" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.9" />
+          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/Aqy/META-INF/MANIFEST.MF" />
