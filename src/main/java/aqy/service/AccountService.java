@@ -1,7 +1,9 @@
 package aqy.service;
 
 import aqy.dao.UserDAO;
+import aqy.dao.VideoDAO;
 import aqy.entity.Account;
+import aqy.entity.Video;
 
 import java.util.List;
 
@@ -25,5 +27,14 @@ public class AccountService {
 
 
         return list;
+    }
+    public Integer getVV(String vid) throws Exception {
+        VideoDAO videoDAO=new VideoDAO();
+        Video video = videoDAO.getVideo(vid);
+        Integer good = video.getVgood();
+        if (good<0){
+            throw new Exception("1");
+        }
+        return good;
     }
 }
