@@ -46,6 +46,40 @@
       <artifactId>servlet-api</artifactId>
       <version>2.5</version>
     </dependency>
+    <dependency>
+      <groupId>apache-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>1.2</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>apache-httpclient</groupId>
+      <artifactId>commons-httpclient</artifactId>
+      <version>3.1</version>
+    </dependency>
+    <dependency>
+      <groupId>ant</groupId>
+      <artifactId>ant-commons-logging</artifactId>
+      <version>1.6.5</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.hynnet</groupId>
+      <artifactId>httpcore</artifactId>
+      <version>4.4.3</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpmime</artifactId>
+      <version>4.5.6</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.zdongcoding</groupId>
+      <artifactId>ajsoup</artifactId>
+      <version>0.3.0</version>
+      <type>pom</type>
+    </dependency>
   </dependencies>
 
   <build>
