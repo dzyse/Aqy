@@ -10,9 +10,26 @@ public class Video {
     private Double vgrade;
     private String vsite;
     private Integer vvip;
-    private Integer vgood;
+    private Integer vtype;
+    private String tip;
+    private String vmintro;
 
     public Video() {
+    }
+
+    public Video(Integer vid, String vname, String vformat, Integer vtime, String vintro, Integer vnum, Double vgrade, String vsite, Integer vvip, Integer vtype, String tip, String vmintro) {
+        this.vid = vid;
+        this.vname = vname;
+        this.vformat = vformat;
+        this.vtime = vtime;
+        this.vintro = vintro;
+        this.vnum = vnum;
+        this.vgrade = vgrade;
+        this.vsite = vsite;
+        this.vvip = vvip;
+        this.vtype = vtype;
+        this.tip = tip;
+        this.vmintro = vmintro;
     }
 
     @Override
@@ -27,7 +44,9 @@ public class Video {
                 ", vgrade=" + vgrade +
                 ", vsite='" + vsite + '\'' +
                 ", vvip=" + vvip +
-                ", vgood=" + vgood +
+                ", vtype=" + vtype +
+                ", tip='" + tip + '\'' +
+                ", vmintro='" + vmintro + '\'' +
                 '}';
     }
 
@@ -103,25 +122,27 @@ public class Video {
         this.vvip = vvip;
     }
 
-    public Integer getVgood() {
-        return vgood;
+    public Integer getVtype() {
+        return vtype;
     }
 
-    public void setVgood(Integer vgood) {
-        this.vgood = vgood;
+    public void setVtype(Integer vtype) {
+        this.vtype = vtype;
     }
 
-    public Video(Integer vid, String vname, String vformat, Integer vtime, String vintro, Integer vnum, Double vgrade, String vsite, Integer vvip, Integer vgood) {
+    public String getTip() {
+        return tip;
+    }
 
-        this.vid = vid;
-        this.vname = vname;
-        this.vformat = vformat;
-        this.vtime = vtime;
-        this.vintro = vintro;
-        this.vnum = vnum;
-        this.vgrade = vgrade;
-        this.vsite = vsite;
-        this.vvip = vvip;
-        this.vgood = vgood;
+    public void setTip(String tip) {
+        this.tip = tip;
+    }
+
+    public String getVmintro() {
+        return vmintro;
+    }
+
+    public void setVmintro(String vmintro) {
+        this.vmintro = vmintro;
     }
 }

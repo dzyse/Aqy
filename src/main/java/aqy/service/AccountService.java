@@ -31,10 +31,16 @@ public class AccountService {
     public Integer getVV(String vid) throws Exception {
         VideoDAO videoDAO=new VideoDAO();
         Video video = videoDAO.getVideo(vid);
-        Integer good = video.getVgood();
+        Integer good = video.getVnum();
         if (good<0){
             throw new Exception("1");
         }
         return good;
+    }
+    public List<Video> getVideo(){
+        VideoDAO video=new VideoDAO();
+        List<Video> list=video.getVideoo();
+
+        return list;
     }
 }
