@@ -6,7 +6,7 @@ import aqy.util.JdbcUtil;
 
 import java.sql.Connection;
 
-public class RegisterService implements seriver.BaseService{
+public class RegisterService implements BaseService{
         private UserDAO personDao=new UserDAO();
         public int register(String phone,String password){
             Connection conn = JdbcUtil.getConn();
