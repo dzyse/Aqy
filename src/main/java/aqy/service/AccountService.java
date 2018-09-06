@@ -37,9 +37,9 @@ public class AccountService {
         }
         return good;
     }
-    public List<Video> getVideo(){
+    public List<Video> getVideo(String num, String num1){
         VideoDAO video=new VideoDAO();
-        List<Video> list=video.getVideoo();
+        List<Video> list=video.getVideoo(num, num1);
 
         return list;
     }

@@ -24,8 +24,13 @@ public class VideoController {
     }
     public void getVideo(HttpServletRequest request, HttpServletResponse response) throws IOException{
         String num=request.getParameter("num");
+        String num1=request.getParameter("num1");
+        System.out.println("1");
+        System.out.println(num);
+        System.out.println(num1);
         AccountService accountService=new AccountService();
-        List<Video> video=accountService.getVideo();
+        List<Video> video=accountService.getVideo(num,num1);
+        System.out.println("2");
         String JSON= com.alibaba.fastjson.JSON.toJSONString(video);
         response.getWriter().write(JSON);
 

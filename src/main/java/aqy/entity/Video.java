@@ -10,14 +10,14 @@ public class Video {
     private Double vgrade;
     private String vsite;
     private Integer vvip;
-    private Integer vtype;
+    private String vtype;
     private String tip;
     private String vmintro;
 
     public Video() {
     }
 
-    public Video(Integer vid, String vname, String vformat, Integer vtime, String vintro, Integer vnum, Double vgrade, String vsite, Integer vvip, Integer vtype, String tip, String vmintro) {
+    public Video(Integer vid, String vname, String vformat, Integer vtime, String vintro, Integer vnum, Double vgrade, String vsite, Integer vvip, String vtype, String tip, String vmintro) {
         this.vid = vid;
         this.vname = vname;
         this.vformat = vformat;
@@ -122,11 +122,11 @@ public class Video {
         this.vvip = vvip;
     }
 
-    public Integer getVtype() {
+    public String getVtype() {
         return vtype;
     }
 
-    public void setVtype(Integer vtype) {
+    public void setVtype(String vtype) {
         this.vtype = vtype;
     }
 
