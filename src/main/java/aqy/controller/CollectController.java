@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+
 public class CollectController {
     public void add(HttpServletRequest request, HttpServletResponse response) throws IOException {
         CollectService collectService=new CollectService();
