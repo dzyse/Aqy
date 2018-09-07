@@ -13,5 +13,7 @@ public class VideoDAO extends BaseDAO{
         String sql="select * from video where vid >= ? and vid<=?";
         return super.query(Video.class,sql,num,num1);
     }
+
+
 }
 

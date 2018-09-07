@@ -13,24 +13,7 @@ public class Video {
     private String vtype;
     private String tip;
     private String vmintro;
-
-    public Video() {
-    }
-
-    public Video(Integer vid, String vname, String vformat, Integer vtime, String vintro, Integer vnum, Double vgrade, String vsite, Integer vvip, String vtype, String tip, String vmintro) {
-        this.vid = vid;
-        this.vname = vname;
-        this.vformat = vformat;
-        this.vtime = vtime;
-        this.vintro = vintro;
-        this.vnum = vnum;
-        this.vgrade = vgrade;
-        this.vsite = vsite;
-        this.vvip = vvip;
-        this.vtype = vtype;
-        this.tip = tip;
-        this.vmintro = vmintro;
-    }
+    private String updata;
 
     @Override
     public String toString() {
@@ -44,10 +27,14 @@ public class Video {
                 ", vgrade=" + vgrade +
                 ", vsite='" + vsite + '\'' +
                 ", vvip=" + vvip +
-                ", vtype=" + vtype +
+                ", vtype='" + vtype + '\'' +
                 ", tip='" + tip + '\'' +
                 ", vmintro='" + vmintro + '\'' +
+                ", updata='" + updata + '\'' +
                 '}';
+    }
+
+    public Video() {
     }
 
     public Integer getVid() {
@@ -144,5 +131,13 @@ public class Video {
 
     public void setVmintro(String vmintro) {
         this.vmintro = vmintro;
+    }
+
+    public String getUpdata() {
+        return updata;
+    }
+
+    public void setUpdata(String updata) {
+        this.updata = updata;
     }
 }
