@@ -1,7 +1,6 @@
 <component name="libraryTable">
   <library name="Maven: apache-httpclient:commons-httpclient:3.1">
     <CLASSES>
-<<<<<<< HEAD
       <root url="jar://$USER_HOME$/.m2/repository/apache-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -9,15 +8,6 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.m2/repository/apache-httpclient/commons-httpclient/3.1/commons-httpclient-3.1-sources.jar!/" />
-=======
-      <root url="jar://$MAVEN_REPOSITORY$/apache-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar!/" />
-    </CLASSES>
-    <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/apache-httpclient/commons-httpclient/3.1/commons-httpclient-3.1-javadoc.jar!/" />
-    </JAVADOC>
-    <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/apache-httpclient/commons-httpclient/3.1/commons-httpclient-3.1-sources.jar!/" />
->>>>>>> 取点赞数
     </SOURCES>
   </library>
 </component>

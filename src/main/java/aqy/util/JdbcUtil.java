@@ -4,15 +4,12 @@ import java.sql.*;
 
 public class JdbcUtil {
    public static String driver="com.mysql.jdbc.Driver";
-<<<<<<< HEAD
+
    public static String url="jdbc:mysql://localhost:3306/actor";
    public static String username="root";
    public static String password="ok123";
-=======
-   public static String url="jdbc:mysql://localhost:3306/aiqiyi";
-   public static String username="root";
-   public static String password="123456";
->>>>>>> 取点赞数
+
+
    static {
        try {
            Class.forName(driver);
