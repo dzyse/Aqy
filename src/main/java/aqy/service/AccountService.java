@@ -12,22 +12,24 @@ public class AccountService {
 
     public Account login(String id,String password)throws Exception{
         Account list=userDAO.getuser(id);
-        System.out.println(list);
-        System.out.println(list.getPassword());
+//        System.out.println(list);
+//        System.out.println(list.getPassword());
         if(list==null){
-
-            throw new Exception("账号不存在");
+            //1为账号不存在
+            throw new Exception("1");
 
         }else {
             if (!list.getPassword().equals(password)){
-
-                throw new Exception("密码错误");
+                //2为账号不存在
+                throw new Exception("2");
             }
         }
-
-
         return list;
     }
+
+
+
+
     public Integer getVV(String vid) throws Exception {
         VideoDAO videoDAO=new VideoDAO();
         Video video = videoDAO.getVideo(vid);
@@ -37,10 +39,19 @@ public class AccountService {
         }
         return good;
     }
+<<<<<<< HEAD
     public List<Video> getVideo(String num, String num1){
         VideoDAO video=new VideoDAO();
         List<Video> list=video.getVideoo(num, num1);
 
         return list;
     }
+=======
+
+
+
+
+
+
+>>>>>>> 取点赞数
 }
